@@ -3569,7 +3569,7 @@ body.is-preload #header.alt {
 }
 
 .background-image-intro {
-    background-image: url("/images/background/intro_3.jpg");
+    background-image: url("/../../images/background/intro_3.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -3577,7 +3577,7 @@ body.is-preload #header.alt {
 }
 
 .background-image-transfer {
-    background-image: url("/images/transfer/transfer.jpg");
+    background-image: url("/../../images/transfer/transfer.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -3585,7 +3585,7 @@ body.is-preload #header.alt {
 }
 
 .background-image-hiking {
-    background-image: url("/images/tour/tour_1.jpg");
+    background-image: url("/../../images/tour/tour_1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -3593,7 +3593,7 @@ body.is-preload #header.alt {
 }
 
 .background-image-jeeping {
-    background-image: url("/images/jeepTours/jeeping.jpg");
+    background-image: url("/../../images/jeepTours/jeeping.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -3601,7 +3601,7 @@ body.is-preload #header.alt {
 }
 
 .background-image-excursions {
-    background-image: url("/images/excursions/excursions.jpg");
+    background-image: url("/../../images/excursions/excursions.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -3609,7 +3609,7 @@ body.is-preload #header.alt {
 }
 
 .background-image-tour {
-    background-image: url("/images/tour/tour_1.jpg");
+    background-image: url("/../../images/tour/tour_1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
