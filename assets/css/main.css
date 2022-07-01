@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     font-weight: 600;
     line-height: 1.5;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.5em 0;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -201,7 +201,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.35em;
+    font-size: 1.15em;
 }
 
 h4 {
@@ -227,7 +227,7 @@ h6 {
     }
 
     h3 {
-        font-size: 1.25em;
+        font-size: 1.15em;
     }
 
 }
@@ -537,6 +537,229 @@ hr.major {
 .row.gtr-200.gtr-uniform > * {
     padding-top: 4em;
 }
+
+/* ADDED BY DEVELOPER */
+
+.team-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+    background-color: rgba(72, 112, 163, 0.15);
+}
+
+.team-content img {
+    display: block;
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.advice-content img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-content .text-inner {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.team-content .text-inner .inner {
+    padding: 1em;
+}
+
+.team-content .text-inner .inner h4,
+.team-content .text-inner .inner h6 {
+    text-transform: uppercase;
+}
+
+.hiking-card {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.hiking-card a .image {
+    padding-right: 3rem;
+}
+
+.hiking-card img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.hiking-card .card-item {
+    padding-left: 1rem;
+}
+
+.hiking-card .major a h3 {
+    transition: color 0.2s ease-in-out;
+}
+
+.hiking-card .major a h3:hover {
+    color: #1ebdd1;
+}
+
+.card-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-item p {
+    margin: 0;
+}
+
+.card-item p:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+.hiking-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.about-accordion {
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.accordion {
+    background-color: #ffffff;
+    color: #2a2f4a;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+}
+
+.accordion:focus {
+    border: none;
+    outline: none;
+}
+
+.about-active, .accordion:hover {
+    background-color: rgba(72, 112, 163, 0.2);
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.accordion-panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion-panel p:first-child {
+    margin-top: 1rem;
+}
+
+.tour-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tour-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.tour-item h5 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.tour-days {
+    display: flex;
+    flex-direction: row;
+}
+
+.tour-days p:first-child {
+    font-size: 1.9rem;
+    margin-right: 1rem;
+}
+
+.tour-days p:nth-child(2) {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #33aa5d;
+    margin-right: 0.5rem;
+}
+
+#tourText .jeeping-list {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#tourText .jeeping-list li {
+    text-transform: none;
+    font-weight: 400;
+}
+
+#jeepTourText .jeeping-list {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#jeepTourText .jeeping-list li {
+    text-transform: none;
+    font-weight: 400;
+}
+
+#excursTourText .take-with {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#excursTourText .take-with li {
+    text-transform: none;
+    font-weight: 400;
+}
+
+#excursTourText .jeeping-list {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#excursTourText .jeeping-list li {
+    text-transform: none;
+    font-weight: 400;
+}
+
+#extremeTourText .jeeping-list {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#extremeTourText .jeeping-list li {
+    text-transform: none;
+    font-weight: 400;
+}
+
+#extremeTourText .take-with {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#extremeTourText .take-with li {
+    text-transform: none;
+    font-weight: 400;
+}
+
+/* END */
 
 @media screen and (max-width: 1680px) {
 
@@ -1520,6 +1743,15 @@ hr.major {
 
 @media screen and (max-width: 480px) {
 
+    .tour-icons {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h5 {
+        font-size: 1.5em;
+    }
+
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -1770,13 +2002,8 @@ section.special, article.special {
 }
 
 header.major {
-    width: -moz-max-content;
-    width: -webkit-max-content;
-    width: -ms-max-content;
-    width: max-content;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    /*margin-bottom: 1em;*/
 }
 
 header.major > :first-child {
@@ -3516,7 +3743,6 @@ body.is-preload #header.alt {
 }
 
 #banner > .inner .content > * {
-    margin-right: 1.5em;
     margin-bottom: 0;
 }
 
@@ -3532,6 +3758,10 @@ body.is-preload #header.alt {
     letter-spacing: 0.25em;
     text-align: center;
     text-transform: uppercase;
+}
+
+#banner .banner-icons {
+    margin-top: 1rem;
 }
 
 #banner.major {
@@ -3602,6 +3832,14 @@ body.is-preload #header.alt {
 
 .background-image-excursions {
     background-image: url("./../../images/excursions/excursions.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-extreme {
+    background-image: url("./../../images/extreme/extreme.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -4072,170 +4310,6 @@ body.is-menu-visible #menu .inner {
     transform: none;
     opacity: 1;
     visibility: visible;
-}
-
-/* ADDED BY DEVELOPER */
-
-.team-content {
-    display: flex;
-    flex-direction: row;
-    /*padding: 0 1em;*/
-    margin-bottom: 2em;
-    background-color: rgba(72, 112, 163, 0.15);
-}
-
-.team-content img {
-    display: block;
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-    /*border-radius: 50%;*/
-}
-
-.advice-content img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.team-content .text-inner {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1em;
-}
-
-.team-content .text-inner .inner {
-    padding: 1em;
-    /*background-color: rgba(72, 112, 163, 0.2);*/
-}
-
-.team-content .text-inner .inner h4,
-.team-content .text-inner .inner h6 {
-    text-transform: uppercase;
-}
-
-.hiking-card {
-    display: flex;
-    margin-bottom: 2rem;
-}
-
-.hiking-card a {
-    padding-right: 3rem;
-}
-
-.hiking-card img {
-    width: 300px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.card-item {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card-item p {
-    margin: 0;
-}
-
-.card-item p:nth-child(2) {
-    margin-bottom: 1rem;
-}
-
-.hiking-price {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.about-accordion {
-    margin-bottom: 2rem;
-    overflow: hidden;
-    transition: all 1s ease-in-out;
-}
-
-.accordion {
-    /*background-color: rgba(72, 112, 163, 0.15);*/
-    /*color: #ffffff;*/
-    background-color: #ffffff;
-    color: #2a2f4a;
-    cursor: pointer;
-    /*width: 100%;*/
-    text-align: left;
-    border: none;
-}
-
-.accordion:focus {
-    border: none;
-    outline: none;
-}
-
-.about-active, .accordion:hover {
-    background-color: rgba(72, 112, 163, 0.2);
-    color: #ffffff;
-    border: none;
-    outline: none;
-}
-
-.accordion-panel {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-}
-
-.accordion-panel p:first-child {
-    margin-top: 1rem;
-}
-
-.tour-icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-}
-
-.tour-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.tour-item h5 {
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-
-.tour-days {
-    display: flex;
-    flex-direction: row;
-}
-
-.tour-days p:first-child {
-    font-size: 1.9rem;
-    margin-right: 1rem;
-}
-
-.tour-days p:nth-child(2) {
-    font-size: 1.9rem;
-    font-weight: 600;
-    color: #33aa5d;
-    margin-right: 0.5rem;
-}
-
-#jeepTourText .take-with {
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-#jeepTourText .take-with li {
-    text-transform: none;
-    font-weight: 400;
 }
 
 /* CAROUSEL */
@@ -4787,7 +4861,7 @@ body.is-menu-visible #menu .inner {
         flex-direction: column;
     }
 
-    .hiking-card a {
+    .hiking-card a .image {
         padding-right: 0;
     }
 
