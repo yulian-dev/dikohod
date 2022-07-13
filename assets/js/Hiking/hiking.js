@@ -40,7 +40,7 @@ const addHikingCards = () => {
                         	<div class="inner card-item">
                             	<header class="major">
                                 	<a class="tour-link" href=${item.link}>
-                            	        <h3>${item.title}</h3>
+                            	        <h3 data-id=${item.id}>${item.title}</h3>
                             	    </a>
                             	</header>
                             	<p>${item.text}</p>
@@ -57,14 +57,16 @@ const addHikingCards = () => {
 
 addHikingCards();
 
-const addOnClick = () => {
-    let images = document.querySelectorAll('a.image img');
-    for(let item of images){
+const addOnClick = (selector) => {
+    let elements = document.querySelectorAll(selector);
+    for (let item of elements) {
         item.addEventListener('click', (event) => {
             let id = event.target.getAttribute('data-id');
             localStorage.setItem('dikohodTour', id);
         })
     }
+
 }
 
-addOnClick();
+addOnClick('a.image img');
+addOnClick('.hiking-card .major a h3');
