@@ -3668,7 +3668,8 @@ body.is-preload #header.alt {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    padding: 6em 0 2em 0;
+    flex-direction: column;
+    justify-content: center;
     border-bottom: 0 !important;
     cursor: default;
     height: 60vh;
