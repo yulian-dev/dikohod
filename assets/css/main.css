@@ -632,8 +632,8 @@ hr.major {
 }
 
 .accordion {
-    background-color: #ffffff;
-    color: #2a2f4a;
+    background-color: inherit;
+    color: #ffffff;
     cursor: pointer;
     text-align: left;
     border: none;
@@ -717,6 +717,10 @@ hr.major {
 #jeepTourText .jeeping-list li {
     text-transform: none;
     font-weight: 400;
+}
+
+#jeepTourText .jeeping-list-text li:first-child {
+    font-weight: 600;
 }
 
 #excursTourText .take-with {
@@ -2521,6 +2525,7 @@ ul.actions {
     list-style: none;
     margin-left: -1em;
     padding-left: 0;
+    z-index: 2;
 }
 
 ul.actions li {
@@ -3765,6 +3770,8 @@ body.is-preload #header.alt {
 }
 
 #banner.major {
+    display: flex;
+    flex-direction: column;
     height: 75vh;
     min-height: 30em;
     max-height: 50em;
@@ -3913,6 +3920,22 @@ body.is-preload #banner > .inner {
 
 }
 
+#our-contacts {
+    background-color: rgba(72, 112, 163, 0.15);
+}
+
+#our-contacts .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#our-contacts .inner li span {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 480px) {
 
     #banner {
@@ -3974,7 +3997,6 @@ body.is-preload #banner > .inner {
         padding: 3em 0 1em 0;
         width: calc(100% - 3em);
     }
-
 }
 
 #main.alt {
@@ -4056,6 +4078,9 @@ body.is-preload #banner > .inner {
         display: block;
     }
 
+    #our-contacts .inner li span {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 736px) {
@@ -4064,6 +4089,18 @@ body.is-preload #banner > .inner {
         padding: 3em 0 1em 0;
     }
 
+    #our-contacts .inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #our-contacts .inner ul:last-child li span {
+        font-size: 1.2rem;
+    }
+
+    #our-contacts .inner li span {
+        font-size: 1.7rem;
+    }
 }
 
 /* Footer */
@@ -4211,6 +4248,10 @@ body.is-preload #banner > .inner {
 
 #menu ul.links > li {
     padding: 0;
+}
+
+#menu ul.links > li:last-child {
+    font-size: 1.7rem;
 }
 
 #menu ul.links > li > a:not(.button) {
